@@ -6,6 +6,9 @@ import { AppComponent } from "./app.component";
 import { ItemService } from "./item/item.service";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
+import { NativeScriptUIListViewModule } from "nativescript-ui-listview/angular";
+import { DataItemService } from "~/data-item/data-item.service";
+import { DataItemComponent } from "~/data-item/data-item.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -19,15 +22,18 @@ import { ItemDetailComponent } from "./item/item-detail.component";
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        NativeScriptUIListViewModule
     ],
     declarations: [
         AppComponent,
         ItemsComponent,
-        ItemDetailComponent
+        ItemDetailComponent,
+        DataItemComponent
     ],
     providers: [
-        ItemService
+        ItemService,
+        DataItemService
     ],
     schemas: [
         NO_ERRORS_SCHEMA
