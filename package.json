@@ -5,7 +5,7 @@
             "version": "4.2.0"
         },
         "tns-ios": {
-            "version": "4.2.0"
+            "version": "4.3.0-2018-09-28-125108-01"
         }
     },
     "description": "NativeScript Application",
@@ -26,7 +26,7 @@
         "nativescript-ui-listview": "^3.7.0",
         "reflect-metadata": "~0.1.8",
         "rxjs": "^6.0.0",
-        "tns-core-modules": "^4.2.1",
+        "tns-core-modules": "^4.3.0-2018-09-28-182206-01",
         "zone.js": "^0.8.26"
     },
     "devDependencies": {
