@@ -1,10 +1,10 @@
 <ActionBar title="My App" class="action-bar">
 </ActionBar>
 
-<GridLayout tkExampleTitle tkToggleNavButton>
-    <RadListView [items]="dataItems">
+<GridLayout>
+    <RadListView [items]="dataItems" backgroundColor="green">
         <ng-template tkListItemTemplate let-item="item">
-            <StackLayout orientation="vertical">
+            <StackLayout orientation="vertical" backgroundColor="red">
                 <Label class="nameLabel" [text]="item.name"></Label>
                 <Label class="descriptionLabel" [text]="item.description"></Label>
             </StackLayout>
